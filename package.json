@@ -1,0 +1,22 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ephimoff/gulp-boilerplate.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Anton Efimov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ephimoff/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ephimoff/gulp-boilerplate#readme"
+}
