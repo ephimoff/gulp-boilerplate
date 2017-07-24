@@ -2,10 +2,11 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
-        }
+            baseDir: "docs/"
+        },
+        files: ['docs/*.html', 'docs/*.css', 'docs/img/*.*']
     });
 });

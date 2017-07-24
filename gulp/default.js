@@ -1,5 +1,13 @@
-var gulp = require("gulp");
+var gulp = require("gulp"),
+    runSequence = require("run-sequence");
+
     
 gulp.task('default', function() {
-    console.log("default gulp task");
+    runSequence(
+        'copy',
+        'stylus',
+        'server',
+        'copy:watch',
+        'stylus:watch'
+    );
 });
