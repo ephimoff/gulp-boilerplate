@@ -39,6 +39,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.0.0"
+    "run-sequence": "^2.1.0"
   }
 }
