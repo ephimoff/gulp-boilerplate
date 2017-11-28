@@ -11,6 +11,7 @@ gulp.task('stylus', function () {
     .pipe(stylus())
     .pipe(rename({ extname: '.css' }))
     .pipe(postcss([autoprefixer()]))
+    // .pipe(gulp.dest('docs'));
     .pipe(gulp.dest(cfg.build.css));
 });
 
