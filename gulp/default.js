@@ -1,13 +1,20 @@
-var gulp = require("gulp"),
-    runSequence = require("run-sequence");
+const gulp        = require("gulp");
+const runSequence = require("run-sequence");
 
-    
 gulp.task('default', function() {
     runSequence(
-        'copy',
+        'img',
+        'js',
         'stylus',
+        'css',
+        'lib',
+        'nunjucks',
         'server',
-        'copy:watch',
-        'stylus:watch'
+        'img:watch',
+        'lib:watch',
+        'js:watch',
+        'stylus:watch',
+        'nunjucks:watch',
+        'css:watch'
     );
 });

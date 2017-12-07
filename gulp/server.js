@@ -1,5 +1,5 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
 
 // Static server
 gulp.task('server', function() {
@@ -10,3 +10,11 @@ gulp.task('server', function() {
         files: ['docs/*.html', 'docs/*.css', 'docs/img/*.*']
     });
 });
+
+// gulp.task('browserSync', function () {
+//     browserSync.init({
+//       server: {
+//         baseDir: 'docs'
+//       },
+//     });
+//   });

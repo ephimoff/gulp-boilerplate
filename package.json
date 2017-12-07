@@ -1,6 +1,6 @@
 {
   "name": "gulp-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gulp template",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ephimoff/gulp-boilerplate.git"
+    "url": "https://github.com/ephimoff/gulp-boilerplate.git"
   },
   "keywords": [
     "gulp"
   ],
   "config": {
     "src": {
-      "stylus": "src/stylus"
+      "css": "src/styles"
     },
     "build": {
       "css": "docs/css"
@@ -35,9 +35,14 @@
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nunjucks-render": "^2.2.1",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0",
+    "jshint": "^2.9.5",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.1.0"
   }
