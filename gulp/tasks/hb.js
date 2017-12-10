@@ -57,7 +57,7 @@ gulp.task('generate_pages', function () {
   }));
 });
 
-gulp.task('homepage', ['clean', 'generate_pages'], function() {
+gulp.task('homepage', ['generate_pages'], function() {
   return gulp.src("src/pages/index.hbs")
     .pipe(tap(function(file, t) {
       let template = Handlebars.compile(file.contents.toString());
