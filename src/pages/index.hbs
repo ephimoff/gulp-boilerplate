@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Learning Gulp</title>
+    <link rel="stylesheet" href="/styles/main.min.css" />
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+    {{#each pages }}
+      <li>
+        <a href="{{ url }}">
+          {{ title }}
+        </a>
+      </li>
+    {{/each}}
+</body>
+
+</html>

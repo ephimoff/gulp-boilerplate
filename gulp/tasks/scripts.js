@@ -1,12 +1,15 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
-const imagemin    = require('gulp-imagemin');
 const jshint      = require('gulp-jshint');
+const uglify      = require('gulp-uglify');
+const concat      = require('gulp-concat');
 
 // Hint all of our custom developed Javascript to make sure things are clean
 gulp.task('js', function () {
     return gulp.src('src/js/**/*.js')
         .pipe(jshint())
+        .pipe(uglify())
+        .pipe(concat('main.js'))
         .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.reload({
             stream: true

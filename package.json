@@ -1,6 +1,6 @@
 {
   "name": "gulp-boilerplate",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Gulp template",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,6 @@
   "keywords": [
     "gulp"
   ],
-  "config": {
-    "src": {
-      "css": "src/styles"
-    },
-    "build": {
-      "css": "docs/css"
-    }
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions"
@@ -34,16 +26,27 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
+    "front-matter": "^2.3.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-data": "^1.2.1",
     "gulp-imagemin": "^4.0.0",
+    "gulp-jasmine": "^2.4.2",
     "gulp-jshint": "^2.0.4",
-    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-markdown": "^1.2.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "jasmine-core": "^2.8.0",
     "jshint": "^2.9.5",
+    "karma": "^1.7.1",
+    "karma-jasmine": "^1.1.1",
+    "path": "^0.12.7",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.1.0"
+    "run-sequence": "^2.1.0",
+    "underscore": "^1.8.3"
   }
 }

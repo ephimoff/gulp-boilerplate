@@ -1,0 +1,17 @@
+{
+    "title": "GSSG",
+    "description": "Gulp based Static Site Generator",
+    "url": "",
+    "authors": {
+        "Anton Efimov": {
+            "name": "Anton Efimov",
+            "bio": ""
+        }
+    },
+    "src": {
+        "css": "src/styles"
+    },
+    "build": {
+        "css": "docs/css"
+    }
+}

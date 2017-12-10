@@ -10,11 +10,3 @@ gulp.task('server', function() {
         files: ['docs/*.html', 'docs/*.css', 'docs/img/*.*']
     });
 });
-
-// gulp.task('browserSync', function () {
-//     browserSync.init({
-//       server: {
-//         baseDir: 'docs'
-//       },
-//     });
-//   });

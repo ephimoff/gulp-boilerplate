@@ -8,13 +8,15 @@ gulp.task('default', function() {
         'stylus',
         'css',
         'lib',
-        'nunjucks',
+        'homepage',
+        // 'nunjucks',
         'server',
         'img:watch',
         'lib:watch',
         'js:watch',
         'stylus:watch',
-        'nunjucks:watch',
+        // 'nunjucks:watch',
+        'homepage:watch',
         'css:watch'
     );
 });
