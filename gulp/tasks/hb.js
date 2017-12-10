@@ -15,13 +15,13 @@ let Data = {
 gulp.task('generate_pages', function () {
   Data.pages=[]; // null ou the object for live reload
   // read the template from page.hbs
-  return gulp.src('src/templates/page.hbs')
+  return gulp.src('src/content/templates/page.hbs')
   .pipe(tap(function(file) {
     // file is page.hbs so generate template from file
     const template = Handlebars.compile(file.contents.toString());
 
     // now read all the pages from the pages directory
-    return gulp.src('src/pages/**.md')
+    return gulp.src('src/content/pages/**.md')
       .pipe(tap(function(file) {
         // use path library to get file name
         let name = path.basename(file.path, ".md");
@@ -58,7 +58,7 @@ gulp.task('generate_pages', function () {
 });
 
 gulp.task('homepage', ['generate_pages'], function() {
-  return gulp.src("src/pages/index.hbs")
+  return gulp.src("src/content/pages/index.hbs")
     .pipe(tap(function(file, t) {
       let template = Handlebars.compile(file.contents.toString());
       let html = template({ 
@@ -73,6 +73,6 @@ gulp.task('homepage', ['generate_pages'], function() {
 
 // Whenever a template is changed, recompile
 gulp.task('homepage:watch', function () {
-  gulp.watch('src/pages/*.+(html|md|hbs)', ['homepage']);
-  gulp.watch('src/templates/**/*.+(html|hbs)', ['homepage']);
+  gulp.watch('src/content/pages/*.+(html|md|hbs)', ['homepage']);
+  gulp.watch('src/content/templates/**/*.+(html|hbs)', ['homepage']);
 });
