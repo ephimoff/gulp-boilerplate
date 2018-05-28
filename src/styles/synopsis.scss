@@ -1,0 +1,17 @@
+// Brand colours and fonts
+$grey: #e5e5e5;
+$light-blue: #e3f2fd;
+$font: 'PT Sans', sans-serif;
+
+// ---
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 20px;
+    /* Margin bottom by footer height */
+    font-family: $font;
+}
+
