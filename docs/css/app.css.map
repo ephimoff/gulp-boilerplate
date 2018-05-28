@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA,KACE,mBAAoB,AACpB,oBAAc,AAAd,oBAAc,AAAd,aAAc,AACd,YAAc,CACf","file":"app.css","sourcesContent":["body {\n  background: #cecece;\n  display: flex;\n  display: grid;\n}\n"]}

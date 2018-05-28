@@ -1,0 +1,1 @@
+{"version":3,"sources":["common.min.css"],"names":[],"mappings":"AAAA,KACE,kBAAmB,AACnB,eAAiB,CAAE,AAErB,KACE,mBAAoB,AAEpB,8BAAmC,CAAE","file":"common.min.css","sourcesContent":["html {\n  position: relative;\n  min-height: 100%; }\n\nbody {\n  margin-bottom: 20px;\n  /* Margin bottom by footer height */\n  font-family: \"PT Sans\", sans-serif; }\n"]}
